@@ -7,6 +7,12 @@
 <head>
 	<meta Charset="utf-8"/>
 	<title>Page Web De Jean Philippe Boa</title>
+	<script type="text/javascript">
+		let villeCourante="Lyon";
+		function showCity(){
+			alert(villeCourante);
+		}
+	</script>
 	<style Type="text/css">
 		#titre{
 			color:white;
@@ -37,7 +43,7 @@
 		
 	</style>
 </head>
-<body>
+<body onload="showCity()">
 	<h1 Id="titre">TP Météo html</h1>
 	<!--météo D'abidjan-->
 
