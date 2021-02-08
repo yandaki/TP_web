@@ -6,11 +6,18 @@
 <html>
 <head>
 	<meta Charset="utf-8"/>
-	<title>Page Web De Jean Philippe Boa</title>
+	<title>Page Web Météo</title>
 	<script type="text/javascript">
-		let villeCourante="Lyon";
+		let villeCourante="lyon";
 		function showCity(){
-			alert(villeCourante);
+			/*console.log(villeCourante);*/
+			let cities = document.getElementsByClassName("city");
+			let l=cities.length;
+			/*console.log(l);*/
+			for(let i=0; i<l; i++){
+				if(cities[i].id==villeCourante) cities[i].style.display="";
+				else cities[i].style.display="none";
+			}
 		}
 	</script>
 	<style Type="text/css">
@@ -21,7 +28,7 @@
 			text-align:center;
 			padding:10px;
 		}
-		.ville{
+		.city{
 			background-color: Rgb(163, 156, 156);
 			padding-left:20px;
 		}
@@ -43,26 +50,32 @@
 		
 	</style>
 </head>
-<body onload="showCity()">
+<body>
 	<h1 Id="titre">TP Météo html</h1>
 	<!--météo D'abidjan-->
+	<select onchange="showCity()">
+		<option value="">--Please choose an option--</option>
+        <option value="abidjan">Abidjan</option>
+        <option value="lyon">Lyon</option>
+        <option value="Manchester">Manchester</option>
+    </select>
 
 	<div Class="flex">
-	 <div Class="ville">
+	 <div id="abidjan" Class="city">
 	   <h2><em>Abidjan</em></h2>
 	   <p> 23°c Ensoleillé<br> 
-		   <img Src="https://drive.google.com/file/d/1AUPnZIqG5sIvY7fe2MRAZaEc9zZ_VpIk/view?usp=sharing" Alt="Temps ensoleillé" Height="60"> 
+		   <img Src="noun_sun_653889.png" Alt="Temps ensoleillé" Height="60"> 
 	   </p>
      </div>
       <!--météo De Lyon-->
-     <div Class="ville">
+     <div id="lyon" Class="city">
 	   <h2><em>Lyon</em></h2>
 	   <p> 5°c Nuageux<br>
 		   <img Src="noun_clouds_653375.png" Alt="Temps nuageux" Height="60"> 
 	   </p>
 	 </div>
       <!--météo De Manchester-->
-     <div Class="ville">
+     <div id="manchester" Class="city">
 	   <h2><em>Manchester</em></h2>
 	   <p> 1°c Pluvieux<br> 
 		    <img Src="noun_sprinkle Cloud_653374.png" Alt="Temps pluvieux" Height="60"> 
