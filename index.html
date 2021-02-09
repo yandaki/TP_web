@@ -8,12 +8,13 @@
 	<meta Charset="utf-8"/>
 	<title>Page Web Météo</title>
 	<script type="text/javascript"  src="meteo.js"></script>
-	<link rel="stylesheet" href="meteo.css">
+	<link rel="stylesheet" type="text/css" href="meteo.css">
+
 </head>
 <body>
-	<h1 Id="titre">TP Météo html</h1>
+	<h1 id="titre">TP Météo html</h1>
 	<!--météo D'abidjan-->
-	<select onchange="showCity()">
+	<select id="choix" onchange="showCity()">
 		<option value="">--Please choose an option--</option>
         <option value="abidjan">Abidjan</option>
         <option value="lyon">Lyon</option>
