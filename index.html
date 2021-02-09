@@ -4,48 +4,49 @@
 
 <!doctype Html>
 <html>
-<head>
-	<meta Charset="utf-8"/>
-	<title>Page Web Météo</title>
-	<script type="text/javascript"  src="meteo.js"></script>
-	<link rel="stylesheet" type="text/css" href="meteo.css">
+	<head>
+		<meta Charset="utf-8"/>
+		<title>Page Web Météo</title>
+		<script type="text/javascript"  src="meteo.js"></script>
+		<link rel="stylesheet" type="text/css" href="meteo.css">
 
-</head>
-<body>
-	<h1 id="titre">TP Météo html</h1>
-	<!--météo D'abidjan-->
-	<select id="choix" onchange="showCity()">
-		<option value="">--Please choose an option--</option>
-        <option value="abidjan">Abidjan</option>
-        <option value="lyon">Lyon</option>
-        <option value="manchester">Manchester</option>
-    </select>
+	</head>
+	<body>
+		<h1 id="titre">TP Météo html</h1>
+		<!--choix du lieu-->
+		<select id="choix" onchange="showCity()">
+			<option value="">--Please choose an option--</option>
+	        <option value="abidjan">Abidjan</option>
+	        <option value="lyon">Lyon</option>
+	        <option value="manchester">Manchester</option>
+	    </select>
 
-	<div Class="flex">
-	 <div id="abidjan" Class="city">
-	   <h2><em>Abidjan</em></h2>
-	   <p> 23°c Ensoleillé<br> 
-		   <img Src="noun_sun_653889.png" Alt="Temps ensoleillé" Height="60"> 
-	   </p>
-     </div>
-      <!--météo De Lyon-->
-     <div id="lyon" Class="city">
-	   <h2><em>Lyon</em></h2>
-	   <p> 5°c Nuageux<br>
-		   <img Src="noun_clouds_653375.png" Alt="Temps nuageux" Height="60"> 
-	   </p>
-	 </div>
-      <!--météo De Manchester-->
-     <div id="manchester" Class="city">
-	   <h2><em>Manchester</em></h2>
-	   <p> 1°c Pluvieux<br> 
-		    <img Src="noun_sprinkle Cloud_653374.png" Alt="Temps pluvieux" Height="60"> 
-	   </p>
-	 </div>
-    </div>
-	<p Id="footer">
-		Yandaki Jean Philippe BOA<br>
-		Icones Météo Par <a Target="_blank" Href="https://thenounproject.com/linseedstudio/collection/weather/">Noun Project</a> 
-	</p>
-</body>
+		<div Class="flex">
+			<!--météo D'abidjan-->
+			 <div id="abidjan" Class="city">
+			   <h2><em>Abidjan</em></h2>
+			   <p> 23°c Ensoleillé<br> 
+				   <img Src="noun_sun_653889.png" Alt="Temps ensoleillé" Height="60"> 
+			   </p>
+		     </div>
+		      <!--météo De Lyon-->
+		     <div id="lyon" Class="city">
+			   <h2><em>Lyon</em></h2>
+			   <p> 5°c Nuageux<br>
+				   <img Src="noun_clouds_653375.png" Alt="Temps nuageux" Height="60"> 
+			   </p>
+			 </div>
+		      <!--météo De Manchester-->
+		     <div id="manchester" Class="city">
+			   <h2><em>Manchester</em></h2>
+			   <p> 1°c Pluvieux<br> 
+				    <img Src="noun_sprinkle Cloud_653374.png" Alt="Temps pluvieux" Height="60"> 
+			   </p>
+			 </div>
+	    </div>
+		<p Id="footer">
+			Yandaki Jean Philippe BOA<br>
+			Icones Météo Par <a Target="_blank" Href="https://thenounproject.com/linseedstudio/collection/weather/">Noun Project</a> 
+		</p>
+	</body>
 </html>
