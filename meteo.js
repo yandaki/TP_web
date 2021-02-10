@@ -1,7 +1,5 @@
 function showCity(){
 	let cities = document.getElementsByClassName("city");
-	let vide=document.getElementsByClassName("flex");
-	vide.style.display="none";
 	let l=cities.length;
 
 	let villeCourante=document.getElementById("choix").value;
